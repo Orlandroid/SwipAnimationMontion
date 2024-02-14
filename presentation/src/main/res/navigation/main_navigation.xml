@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/swipeAnimationFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -48,4 +48,8 @@
         android:name="com.example.presentation.features.dogs.DogsFragment"
         android:label="DogsFragment"
         tools:layout="@layout/fragment_dogs" />
+    <fragment
+        android:id="@+id/swipeAnimationFragment"
+        android:name="com.example.presentation.features.animation.SwipeAnimationFragment"
+        android:label="SwipeAnimationFragment" />
 </navigation>

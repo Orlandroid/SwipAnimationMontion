@@ -19,4 +19,11 @@
     <string name="the_bored_api">The Bored API</string>
     <string name="countries">REST Countries</string>
     <string name="dogs_api">Dog API</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="sig_up">Sig up</string>
+    <string name="login">Login</string>
+    <string name="swipe_down">Swipe Down</string>
+    <string name="swipe_up">Swipe Up</string>
+    <string name="description">Description</string>
 </resources>
