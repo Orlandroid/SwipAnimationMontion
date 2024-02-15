@@ -21,9 +21,10 @@
     <string name="dogs_api">Dog API</string>
     <string name="up">Up</string>
     <string name="down">Down</string>
-    <string name="sig_up">Sig up</string>
-    <string name="login">Login</string>
+    <string name="sig_up">First animation</string>
+    <string name="login">Second animation</string>
     <string name="swipe_down">Swipe Down</string>
     <string name="swipe_up">Swipe Up</string>
     <string name="description">Description</string>
+    <string name="animation_screen">Animation Screen</string>
 </resources>

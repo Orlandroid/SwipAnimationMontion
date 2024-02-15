@@ -2,6 +2,7 @@ package com.example.presentation.extensions
 
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.EditText
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,13 +24,14 @@ fun EditText.getTextWatcher(checkMyForm: () -> Unit): TextWatcher {
     }
 }
 
-fun MotionLayout.setOnTransitionListener(
+
+fun MotionLayout.setOnMyTransitionListener(
     onStart: () -> Unit = {},
     onChange: () -> Unit = {},
-    onComplete: () -> Unit = {},
-    onTrigger: () -> Unit = {}
-): MotionLayout.TransitionListener {
-    return object : MotionLayout.TransitionListener {
+    onTrigger: () -> Unit = {},
+    onComplete: () -> Unit = {}
+) {
+    setTransitionListener(object : MotionLayout.TransitionListener {
         override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
             onStart()
         }
@@ -46,7 +48,7 @@ fun MotionLayout.setOnTransitionListener(
             onTrigger()
         }
 
-    }
+    })
 }
 
 fun RecyclerView.myOnScrolled(getNextPage: () -> Unit) {

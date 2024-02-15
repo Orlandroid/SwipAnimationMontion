@@ -51,5 +51,14 @@
     <fragment
         android:id="@+id/swipeAnimationFragment"
         android:name="com.example.presentation.features.animation.SwipeAnimationFragment"
-        android:label="SwipeAnimationFragment" />
+        android:label="SwipeAnimationFragment">
+        <action
+            android:id="@+id/action_swipeAnimationFragment_to_animationActionFragment"
+            app:destination="@id/animationActionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animationActionFragment"
+        android:name="com.example.presentation.features.animation.AnimationActionFragment"
+        android:label="AnimationActionFragment"
+        tools:layout="@layout/fragment_animation_action" />
 </navigation>
